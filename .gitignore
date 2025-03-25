@@ -1,0 +1,22 @@
+# Ignore virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore model checkpoints
+*.keras
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# VS Code and Mac files
+.vscode/
+.DS_Store
+
+# Other render/deployment build files
+*.log
