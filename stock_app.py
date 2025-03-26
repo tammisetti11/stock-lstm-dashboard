@@ -12,7 +12,7 @@ app = dash.Dash()
 server = app.server
 
 # Load and preprocess dataset
-df_nse = pd.read_csv("NSE-TATA.csv").tail(600)
+df_nse = pd.read_csv("NSE-TATA.csv")
 df_nse["Date"] = pd.to_datetime(df_nse["Date"], format="%Y-%m-%d")
 df_nse.set_index("Date", inplace=True)
 

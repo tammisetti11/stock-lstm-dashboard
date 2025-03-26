@@ -51,14 +51,16 @@ X_test = np.array(X_test).reshape(len(X_test), 60, 1)
 predicted_prices = model.predict(X_test)
 predicted_prices = scaler.inverse_transform(predicted_prices)
 
+
 # Save model
 model.save("lstm_stock_model.h5")
 
 # Plot results
 train_df, valid_df = dataframe[:data_split], dataframe[data_split:]
 valid_df["Predictions"] = predicted_prices
+valid_df.to_csv("predictions.csv", index=False)
 plt.figure(figsize=(16, 8))
 plt.plot(train_df["Close"], label="Training Data")
 plt.plot(valid_df[["Close", "Predictions"]], label=["Actual Price", "Predicted Price"])
 plt.legend()
-plt.show()
+#plt.show()
