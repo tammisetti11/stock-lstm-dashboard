@@ -29,7 +29,7 @@ A real-time, interactive dashboard that uses an **LSTM deep learning model** to 
 - Loss Function: Mean Squared Error
 
 ---
-## 🚀 How to Run Locally
+## How to Run Locally
 
 
 ### 1. Clone the Repository
