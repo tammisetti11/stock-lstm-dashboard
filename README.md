@@ -54,5 +54,14 @@ A real-time, interactive dashboard that uses an **LSTM deep learning model** to 
 ```
 - python3 stock_app.py
 ```
+---
+## Author
+Naveen Tammisetti
+- [LinkedIn](https://www.linkedin.com/in/naveen-tammisetti/)
+- tammisettinaveen@gmail.com
+---
+## License
+This project is licensed under the MIT License. Feel free to fork, modify, and use for personal or academic use.
+
 
 
