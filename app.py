@@ -35,7 +35,8 @@ def predict():
     predictions = model.predict(X_test)
     predictions = scaler.inverse_transform(predictions)
 
-    # Get dates aligned with predictions
+    # Trim to last 100 predictions
+    predictions = predictions[-100:]
     dates = df.index[-len(predictions):].strftime("%Y-%m-%d").tolist()
     prices = predictions.flatten().tolist()
 
