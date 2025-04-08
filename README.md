@@ -15,6 +15,8 @@ A real-time, interactive dashboard that uses an **LSTM deep learning model** to 
   - **MAE (Mean Absolute Error)**: 1.7
 -  Built an interactive dashboard using **Plotly Dash**
 
+![image](https://github.com/user-attachments/assets/9c01c76b-348a-4fc9-b16a-27ed144ec295)
+
 ---
 
 ## **Model Architecture**
